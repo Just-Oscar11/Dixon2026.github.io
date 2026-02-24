@@ -47,12 +47,14 @@
 			.main-area {
 				display: flex;
 				justify-content: center;
+        flex-direction: column;
+        align-items: center;
 				background-color: rgba(16, 95, 27, 0.829);
 				border-radius: 30px;
 				-moz-border-radius: 30px;
 				-webkit-border-radius: 30px;
 				-o-border-radius: 30px;
-				height: 4000px;
+				height: 100%;
 				width: 90%;
         margin:auto;
 				margin-top: 20px;
@@ -60,12 +62,17 @@
 			}
 
 			.where {
+        justify-content:left;
 				font-size: 18;
         height:auto;
         width: 80%;
-        
-
 			}
+
+      .gifts{
+        display:flex;
+        justify-content: left;
+
+      }
 		</style>
 	</head>
 
@@ -88,7 +95,7 @@
               <iframe width="100%" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=0.20538210868835452%2C50.89386403014141%2C0.21643280982971194%2C50.897274628973086&amp;layer=mapnik&amp;marker=50.89556936077933%2C0.2109074592590332" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=50.895569&amp;mlon=0.210907#map=17/50.895569/0.210907">View Larger Map</a></small>
             </div>
 					</div>
-          <div class="gift">
+          <div class="gifts">
             <h3>Gifts</h3>
           </div>
 				</div>
