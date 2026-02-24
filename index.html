@@ -18,33 +18,52 @@
 			h1 {
 				color: white;
 			}
-			  .title {
-			     display: flex;
-			     flex-direction: column;
-			     justify-content: center;
-			     width: 80%;
-			     align-items: center;
-			     background:#0c570c -webkit-radial-gradient(20% 100%, 40% 70%, rgba(14, 70, 20, 0.15), rgba(59, 160, 71, 0.5));
-			     border-radius: 15px;
-			     margin: auto;
 
-			    }
-			   .page-container {
-			     display: flex;
-			     flex-direction: column;
-			     align-items: vertical;
-			     justify-content:vertical;
-			    }
+			.page-container {
+				display: flex;
+				flex-direction: column;
+				align-items: vertical;
+				justify-content: vertical;
+			}
+			.title {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				width: 80%;
+				align-items: center;
+				background: #0c570c -webkit-radial-gradient(
+						20% 100%,
+						40% 70%,
+						rgba(14, 70, 20, 0.15),
+						rgba(59, 160, 71, 0.5)
+					);
+				border-radius: 15px;
+				-moz-border-radius: 15px;
+				-webkit-border-radius: 15px;
+				-o-border-radius: 15px;
+				margin: auto;
+			}
 
-			   .main-area{
-			     display: flex;
-			     justify-content:center;
-			     background-color: rgba(16, 95, 27, 0.829);
-			     margin-top:20px;
-           height: 4000px;
-           width: auto;
-           
-			    }
+			.main-area {
+				display: flex;
+				justify-content: center;
+				background-color: rgba(16, 95, 27, 0.829);
+				border-radius: 30px;
+				-moz-border-radius: 30px;
+				-webkit-border-radius: 30px;
+				-o-border-radius: 30px;
+				margin-top: 20px;
+				height: 4000px;
+				width: auto;
+			}
+
+			.where {
+				font-size: 18;
+        height:auto;
+        width: auto;
+        
+
+			}
 		</style>
 	</head>
 
@@ -56,7 +75,15 @@
 					<p2>18th August 2026</p2>
 				</div>
 				<div class="main-area">
-					<p>Test text</p>
+					<div class="where">
+						<h2>Where is it?</h2>
+            <p>The ceremony will be at All Saint's Church in Waldron, TN21 0RA</p>
+						<div class="map">
+							<iframe width="600" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=0.20257651805877688%2C50.95116138777946%2C0.20533919334411624%2C50.95201301145807&amp;layer=mapnik&amp;marker=50.95158720156936%2C0.20395785570144653" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=50.951587&amp;mlon=0.203958#map=19/50.951587/0.203958&amp;layers=N">View Larger Map</a></small>
+						</div>
+            <p>The reception will be at Peke's Manor, Golden Cross, BN21 4AD </p>
+            <iframe width="600" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=0.20538210868835452%2C50.89386403014141%2C0.21643280982971194%2C50.897274628973086&amp;layer=mapnik&amp;marker=50.89556936077933%2C0.2109074592590332" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=50.895569&amp;mlon=0.210907#map=17/50.895569/0.210907">View Larger Map</a></small>
+					</div>
 				</div>
 			</div>
 		</h1>
