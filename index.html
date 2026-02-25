@@ -19,11 +19,26 @@
 				color: white;
 			}
 
+			#resolution-debug {
+				position: fixed;
+				bottom: 10px;
+				right: 10px;
+				background: rgba(0, 0, 0, 0.7);
+				color: #00ffcc;
+				padding: 8px 12px;
+				font-family: monospace;
+				font-size: 14px;
+				border-radius: 6px;
+				z-index: 9999;
+				pointer-events: none;
+			}
+
 			.page-container {
 				display: flex;
 				flex-direction: column;
 				align-items: vertical;
 				justify-content: vertical;
+				min-width: 620px;
 			}
 			.title {
 				display: flex;
@@ -31,12 +46,12 @@
 				justify-content: center;
 				width: 80%;
 				align-items: center;
-				background: #0c570c -webkit-radial-gradient(
-						20% 100%,
-						40% 70%,
-						rgba(14, 70, 20, 0.15),
-						rgba(59, 160, 71, 0.5)
-					);
+				background: -webkit-radial-gradient(
+					50% 100%,
+					50% 50%,
+					rgba(87, 82, 11, 0.897),
+					rgba(151, 124, 37, 0.932)
+				);
 				border-radius: 15px;
 				-moz-border-radius: 15px;
 				-webkit-border-radius: 15px;
@@ -44,35 +59,36 @@
 				margin: auto;
 			}
 
-			.main-area {
-				display: flex;
-				justify-content: center;
-        flex-direction: column;
-        align-items: center;
-				background-color: rgba(16, 95, 27, 0.829);
+			.main-area-bg {
+				background-color: #f2eccaec;
 				border-radius: 30px;
 				-moz-border-radius: 30px;
 				-webkit-border-radius: 30px;
 				-o-border-radius: 30px;
 				height: 100%;
 				width: 90%;
-        margin:auto;
+				margin: auto;
 				margin-top: 20px;
-
+			}
+			.main-content {
+				display: flex;
+				flex-direction: column;
 			}
 
 			.where {
-        justify-content:left;
+				display: flex;
+				flex-wrap: wrap;
+				color: rgb(192, 170, 43);
+				justify-content: left;
 				font-size: 18;
-        height:auto;
-        width: 80%;
+				height: auto;
+				width: 80%;
 			}
 
-      .gifts{
-        display:flex;
-        justify-content: left;
-
-      }
+			.gifts {
+				display: flex;
+				justify-content: left;
+			}
 		</style>
 	</head>
 
@@ -83,23 +99,66 @@
 					<p1>Oscar and Isabelle's Wedding</p1>
 					<p2>18th August 2026</p2>
 				</div>
-				<div class="main-area">
-					<div class="where">
+				<div class="main-area-bg">
+					<div class="main-content">
 						<h2>Where is it?</h2>
-						<div class="map1">
-              <p>The ceremony will be at All Saint's Church in Waldron, TN21 0RA</p>
-							<iframe width="100%" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=0.20257651805877688%2C50.95116138777946%2C0.20533919334411624%2C50.95201301145807&amp;layer=mapnik&amp;marker=50.95158720156936%2C0.20395785570144653" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=50.951587&amp;mlon=0.203958#map=19/50.951587/0.203958&amp;layers=N">View Larger Map</a></small>
+						<div class="where">
+							<div class="map1">
+								<p>The ceremony will be at All Saint's Church in Waldron, TN21 0RA</p>
+								<iframe
+									width="100%"
+									height="350"
+									src="https://www.openstreetmap.org/export/embed.html?bbox=0.20257651805877688%2C50.95116138777946%2C0.20533919334411624%2C50.95201301145807&amp;layer=mapnik&amp;marker=50.95158720156936%2C0.20395785570144653"
+									style="border: 2px solid black"
+								>
+								</iframe>
+								<small>
+									<a
+										href="https://www.openstreetmap.org/?mlat=50.951587&amp;mlon=0.203958#map=19/50.951587/0.203958&amp;layers=N"
+										>View Larger Map</a
+									>
+								</small>
+							</div>
+							<div class="map2">
+								<p>The reception will be at Peke's Manor, Golden Cross, BN21 4AD</p>
+								<iframe
+									width="100%"
+									height="350"
+									src="https://www.openstreetmap.org/export/embed.html?bbox=0.20538210868835452%2C50.89386403014141%2C0.21643280982971194%2C50.897274628973086&amp;layer=mapnik&amp;marker=50.89556936077933%2C0.2109074592590332"
+									style="border: 2px solid black"
+								>
+								</iframe>
+								<small>
+									<a
+										href="https://www.openstreetmap.org/?mlat=50.895569&amp;mlon=0.210907#map=17/50.895569/0.210907"
+										>View Larger Map</a
+									>
+								</small>
+							</div>
 						</div>
-            <div class="map2">
-              <p>The reception will be at Peke's Manor, Golden Cross, BN21 4AD </p>
-              <iframe width="100%" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=0.20538210868835452%2C50.89386403014141%2C0.21643280982971194%2C50.897274628973086&amp;layer=mapnik&amp;marker=50.89556936077933%2C0.2109074592590332" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=50.895569&amp;mlon=0.210907#map=17/50.895569/0.210907">View Larger Map</a></small>
-            </div>
+						<div class="gifts">
+							<h3>Gifts</h3>
+						</div>
 					</div>
-          <div class="gifts">
-            <h3>Gifts</h3>
-          </div>
 				</div>
 			</div>
 		</h1>
+		<div id="resolution-debug"></div>
 	</body>
 </html>
+<script>
+function updateResolutionDebug() {
+    const debug = document.getElementById("resolution-debug");
+
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+    const ratio = window.devicePixelRatio;
+
+    debug.textContent =
+        `Viewport: ${width} x ${height}
+DPR: ${ratio}`;
+}
+
+window.addEventListener("resize", updateResolutionDebug);
+updateResolutionDebug();
+</script>
